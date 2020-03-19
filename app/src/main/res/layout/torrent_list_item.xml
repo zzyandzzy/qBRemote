@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/torrent_list_item"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/focusable_background">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/tr_abc_list_item_padding_horizontal_material"
+            android:paddingRight="@dimen/tr_abc_list_item_padding_horizontal_material"
+            android:paddingTop="@dimen/torrent_list_vertical_padding"
+            android:paddingBottom="@dimen/torrent_list_vertical_padding"
+            android:descendantFocusability="blocksDescendants"
+            android:background="?android:attr/selectableItemBackground">
+
+        <xyz.zzyitj.qbremote.torrentlist.PlayPauseButton
+                android:id="@+id/torrent_list_item_button"
+                android:layout_width="@dimen/torrent_list_start_button_size"
+                android:layout_height="@dimen/torrent_list_start_button_size"
+                android:layout_gravity="center_vertical"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                app:background_color="?android:attr/windowBackground"
+                app:border_color="?android:attr/textColorPrimary"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/torrent_list_start_button_padding"
+                android:orientation="vertical"
+                android:clickable="false">
+
+            <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/tr_abc_text_size_subhead_material"
+                    android:maxLines="2"
+                    android:textColor="?android:textColorPrimary"/>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/torrent_list_item_download"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/tr_abc_text_size_caption_material"
+                        android:textColor="?android:textColorSecondary"/>
+
+                <ImageView
+                        android:id="@+id/torrent_list_item_download_icon"
+                        android:layout_width="@dimen/torrent_list_down_up_icon_size"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/default_padding_small"
+                        android:paddingBottom="@dimen/default_padding_small"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/torrent_list_item_download"
+                        android:layout_alignBottom="@id/torrent_list_item_download"
+                        android:src="@drawable/ic_arrow_downward"
+                        tools:ignore="MissingPrefix"/>
+
+                <TextView
+                        android:id="@+id/torrent_list_item_download_speed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/torrent_list_item_download_icon"
+                        android:gravity="end"
+                        android:layout_marginRight="@dimen/default_text_margin"
+                        android:textSize="@dimen/tr_abc_text_size_caption_material"
+                        android:textColor="?android:textColorSecondary"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/torrent_list_item_upload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/tr_abc_text_size_caption_material"
+                        android:textColor="?android:textColorSecondary"/>
+
+                <ImageView
+                        android:id="@+id/torrent_list_item_upload_icon"
+                        android:layout_width="@dimen/torrent_list_down_up_icon_size"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/default_padding_small"
+                        android:paddingBottom="@dimen/default_padding_small"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/torrent_list_item_upload"
+                        android:layout_alignBottom="@id/torrent_list_item_upload"
+                        android:src="@drawable/ic_arrow_upward"
+                        tools:ignore="MissingPrefix"/>
+
+                <TextView
+                        android:id="@+id/torrent_list_item_upload_speed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/torrent_list_item_upload_icon"
+                        android:gravity="end"
+                        android:layout_marginRight="@dimen/default_text_margin"
+                        android:textSize="@dimen/tr_abc_text_size_caption_material"
+                        android:textColor="?android:textColorSecondary"/>
+            </RelativeLayout>
+
+            <ProgressBar
+                    android:id="@+id/torrent_list_item_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/torrent_list_progressbar_height"
+                    android:layout_marginTop="@dimen/default_text_margin_small"
+                    android:layout_marginBottom="@dimen/default_text_margin_small"
+                    style="@android:style/Widget.Holo.ProgressBar.Horizontal"/>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/torrent_list_item_percent_done"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textSize="@dimen/tr_abc_text_size_caption_material"
+                        android:textColor="?android:textColorSecondary"
+                        android:text="99.9%"/>
+
+                <TextView
+                        android:id="@+id/torrent_list_item_remaining_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="@dimen/tr_abc_text_size_caption_material"
+                        android:textColor="?android:textColorSecondary"
+                        android:text="9h 23m 59s"/>
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/torrent_list_item_error_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/default_padding_small"
+                    android:textSize="@dimen/abc_text_size_caption_material"
+                    android:textColor="?android:textColorSecondary"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+            android:id="@+id/selected_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/torrent_list_selected_overlay"
+            android:visibility="invisible"/>
+
+    <View
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/torrent_list_selected_overlay"/>
+
+</FrameLayout>

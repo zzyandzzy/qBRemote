@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#607D8B</color>
+    <color name="colorPrimaryDark">#455A64</color>
+    <color name="colorAccent">#FF5252</color>
+    <color name="alternative_accent">#ff8a80</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_primary_disabled">#80000000</color>
+    <color name="text_secondary">#727272</color>
+    <color name="text_secondary_disabled">#80323232</color>
+    <color name="text_primary_inverse">@android:color/white</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="window_background">@android:color/white</color>
+
+    <!-- Torrent list -->
+    <color name="torrent_list_progressbar_background">#ffb9b9b9</color>
+    <color name="torrent_list_progressbar_progress_color">#0091EA</color>
+    <color name="torrent_list_progressbar_progress_finished_color">#43A047</color>
+    <color name="torrent_list_progressbar_progress_disabled_color">#ff737373</color>
+    <color name="torrent_list_progressbar_progress_rechecking_color">#F9A825</color>
+    <color name="torrent_list_selected_overlay">#88646464</color>
+
+    <!-- Material Drawer -->
+    <color name="drawer_background">@color/material_drawer_background</color>
+    <color name="drawer_primary_text">@color/material_drawer_primary_text</color>
+    <color name="drawer_primary_icon">@color/material_drawer_primary_icon</color>
+    <color name="drawer_secondary_text">@color/material_drawer_secondary_text</color>
+    <color name="drawer_hint_text">@color/material_drawer_hint_text</color>
+    <color name="drawer_divider">@color/material_drawer_divider</color>
+    <color name="drawer_selected">@color/material_drawer_selected</color>
+    <color name="drawer_selected_text">@color/material_drawer_selected_text</color>
+    <color name="drawer_header_selection_text">@color/material_drawer_header_selection_text</color>
+    <color name="drawer_header_circle_background">@android:color/white</color>
+    <color name="drawer_header_circle_foreground">@color/text_secondary</color>
+
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="default_port">8080</integer>
+    <string name="default_rpc_url" translatable="false">/v2/api/</string>
+</resources>

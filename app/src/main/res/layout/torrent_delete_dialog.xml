@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <CheckBox
+            android:id="@+id/delete_files_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_edit_text_height"
+            android:textSize="@dimen/tr_abc_text_size_body_1_material"
+            android:text="@string/delete_file"
+            android:layout_margin="@dimen/default_layout_margin"
+            android:checked="true"/>
+</LinearLayout>

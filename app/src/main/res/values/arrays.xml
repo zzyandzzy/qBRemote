@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="protocol_spinner">
+        <item>8080</item>
+        <item>443</item>
+    </string-array>
+
+    <string-array name="filter_spinner">
+        <item>@string/all</item>
+        <item>@string/downloading</item>
+        <item>@string/completed</item>
+        <item>@string/paused</item>
+        <item>@string/active</item>
+        <item>@string/inactive</item>
+        <item>@string/resumed</item>
+    </string-array>
+</resources>
